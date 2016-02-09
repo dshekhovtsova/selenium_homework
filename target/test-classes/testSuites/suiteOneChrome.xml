@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite #1">
+<parameter name="browser" value="chrome">
+
+</parameter>
+	<test name="test #1">
+		<groups>
+			<run>
+				<include name="test1">
+				</include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.nymgo.tests.NymgoTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,5 @@
+com\nymgo\pages\SignInPage.class
+com\nymgo\framework\DriverManager.class
+com\nymgo\pages\MainPage.class
+com\nymgo\pages\JoinNowPage.class
+com\nymgo\pages\NymgoPage.class

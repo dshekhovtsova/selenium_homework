@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [suite #2]">
+  <parameter name="browser" value="firefox"/>
+  <test name="test #2">
+    <groups>
+      <run>
+        <include name="test1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.nymgo.tests.NymgoTest"/>
+    </classes>
+  </test> <!-- test #2 -->
+  <test name="test #2(failed)">
+    <groups>
+      <run>
+        <include name="test1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.nymgo.tests.NymgoTest">
+        <methods>
+          <include name="testPhoneFiledOnJoinNowPage"/>
+          <include name="setBrowser"/>
+          <include name="shutDown"/>
+        </methods>
+      </class> <!-- com.nymgo.tests.NymgoTest -->
+    </classes>
+  </test> <!-- test #2(failed) -->
+</suite> <!-- Failed suite [suite #2] -->
